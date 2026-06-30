@@ -83,3 +83,4 @@ You can deploy this website on any static hosting service:
 For questions or custom development, contact us at megajoulescleaning@gmail.com.
 
 Built with ❤️ by the Mega Joules team.
+"# mega-joules-website" 
