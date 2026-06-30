@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega Joules – Professional Cleaning & Property Maintenance</title>
+    <meta name="description" content="Delivering exceptional cleaning, maintenance and hygiene solutions for residential, commercial and industrial clients across South Africa." />
+    <!-- ===== FONTS & ICONS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== COOKIE CONSENT ===== -->
+    <div class="cookie-banner" id="cookieBanner">
+        <p>🍪 We use cookies to enhance your experience. By continuing to browse, you accept our <a href="#" style="color:var(--sky);text-decoration:underline;">Privacy Policy</a>.</p>
+        <div class="cookie-buttons">
+            <button class="btn btn-primary btn-sm" onclick="acceptCookies()">Accept</button>
+            <button class="btn btn-outline btn-sm" style="border-color:rgba(255,255,255,0.2);color:#fff;" onclick="declineCookies()">Decline</button>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo" id="navLogo">
+                <!-- 👇 REPLACE THIS SRC WITH YOUR OWN LOGO -->
+                <img src="https://ui-avatars.com/api/?name=MJ&background=0B7BEA&color=fff&size=44&font-size=0.5&bold=true" alt="Mega Joules Logo" class="logo-img" id="logoImg" />
+                <span>Mega<span>Joules</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#blog">Insights</a>
+                <a href="#contact">Contact</a>
+                <div class="nav-cta">
+                    <button class="btn btn-primary" style="padding:10px 24px;font-size:0.85rem;" id="navGetQuote">Get Quote</button>
+                </div>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-image"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Trusted Since 2025 · ISO 9001 Compliant
+                </div>
+                <h1>
+                    Professional Cleaning &amp;<br />
+                    <span class="highlight">Property Maintenance</span> Services
+                </h1>
+                <p>
+                    Delivering exceptional cleaning, maintenance and hygiene solutions for
+                    residential, commercial and industrial clients across South Africa.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="heroGetQuoteBtn">
+                        <i class="fas fa-paper-plane"></i> Get a Quote
+                    </button>
+                    <a href="#services" class="btn btn-ghost" id="heroServicesBtn">
+                        Our Services <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <span class="hero-trust-item"><i class="fas fa-check-circle"></i> Company Reg: 2025/466476/07</span>
+                    <span class="hero-trust-item"><i class="fas fa-users"></i> Professional Team</span>
+                    <span class="hero-trust-item"><i class="fas fa-medal"></i> Quality Guaranteed</span>
+                    <span class="hero-trust-item"><i class="fas fa-headset"></i> 24/7 Support</span>
+                </div>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                <div class="hero-stat">
+                    <div class="number" data-count="500">0</div>
+                    <div class="label">Projects Completed</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="number" data-count="350">0</div>
+                    <div class="label">Happy Clients</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="number" data-count="12">0</div>
+                    <div class="label">Years Experience</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="number" data-count="48">0</div>
+                    <div class="label">Team Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section-padding" id="about" style="background:var(--gray-soft);">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="700">
+                    <!-- 👇 REPLACE WITH YOUR OWN ABOUT IMAGE -->
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Professional cleaning team" id="aboutImg" />
+                    <div class="badge-float">
+                        <i class="fas fa-star"></i>
+                        <div class="text">
+                            100% Commitment
+                            <small>To Quality Service</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left" data-aos-duration="700">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">We Don't Just Clean, <span>We Care</span></h2>
+                    <p style="color:var(--text-muted);line-height:1.8;margin-top:12px;">
+                        Mega Joules Cleaning &amp; Property Maintenance Services is a premier provider
+                        of professional cleaning and maintenance solutions. With a commitment to
+                        excellence, we deliver tailored services that meet the highest standards
+                        of quality, hygiene, and reliability.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item"><i class="fas fa-check-circle"></i> Mission-Driven</div>
+                        <div class="about-feature-item"><i class="fas fa-eye"></i> Visionary Approach</div>
+                        <div class="about-feature-item"><i class="fas fa-heart"></i> Core Values</div>
+                        <div class="about-feature-item"><i class="fas fa-building"></i> Corporate Excellence</div>
+                    </div>
+                    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
+                        <button class="btn btn-primary" id="aboutLearnMoreBtn">Learn More <i class="fas fa-arrow-right"></i></button>
+                        <a href="#services" class="btn btn-outline" id="aboutServicesBtn">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section-padding" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">Comprehensive <span>Solutions</span></h2>
+                <p class="section-sub">From commercial cleaning to property maintenance, we deliver excellence across every service.</p>
+            </div>
+            <div class="services-grid" id="servicesGrid">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICE DETAIL MODAL ===== -->
+    <div class="modal-overlay" id="serviceModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="modal-icon" id="modalIcon"><i class="fas fa-building"></i></div>
+            <h2 id="modalTitle">Service Title</h2>
+            <div class="modal-body" id="modalBody">
+                <p>Detailed description of the service.</p>
+                <ul>
+                    <li>Professional execution</li>
+                    <li>Quality guaranteed</li>
+                    <li>Tailored to your needs</li>
+                </ul>
+            </div>
+            <div class="modal-cta">
+                <button class="btn btn-primary" id="modalQuoteBtn">Request a Quote</button>
+                <button class="btn btn-outline" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== QUOTE MODAL ===== -->
+    <div class="modal-overlay form-modal" id="quoteModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeQuoteModal()">&times;</button>
+            <div id="quoteFormContent">
+                <div class="modal-icon"><i class="fas fa-file-invoice"></i></div>
+                <h2>Request a Free Quote</h2>
+                <p style="color:var(--text-muted);margin-bottom:20px;">Fill in your details and we'll get back to you within 24 hours.</p>
+                <form id="quoteForm" onsubmit="submitQuote(event)">
+                    <div class="form-group">
+                        <label for="qname">Full Name *</label>
+                        <input type="text" id="qname" required placeholder="Your full name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="qemail">Email Address *</label>
+                        <input type="email" id="qemail" required placeholder="you@example.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="qphone">Phone Number *</label>
+                        <input type="tel" id="qphone" required placeholder="Your phone number" />
+                    </div>
+                    <div class="form-group">
+                        <label for="qservice">Service Interested In</label>
+                        <select id="qservice">
+                            <option value="">Select a service...</option>
+                            <option value="commercial">Commercial Cleaning</option>
+                            <option value="industrial">Industrial Cleaning</option>
+                            <option value="residential">Residential Cleaning</option>
+                            <option value="retail">Retail Cleaning</option>
+                            <option value="healthcare">Healthcare Cleaning</option>
+                            <option value="educational">Educational Cleaning</option>
+                            <option value="sanitization">Sanitization &amp; Disinfection</option>
+                            <option value="pest">Pest Control</option>
+                            <option value="garden">Garden Services</option>
+                            <option value="pressure">High Pressure Cleaning</option>
+                            <option value="pool">Pool Cleaning</option>
+                            <option value="painting">Painting</option>
+                            <option value="tile">Tile Installation &amp; Removal</option>
+                            <option value="cupboards">Built-in Cupboards Installation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="qmessage">Message</label>
+                        <textarea id="qmessage" placeholder="Tell us about your needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fas fa-paper-plane"></i> Submit Quote Request</button>
+                </form>
+            </div>
+            <div id="quoteThankYou" style="display:none;">
+                <div class="thank-you-content">
+                    <div class="big-icon"><i class="fas fa-check-circle"></i></div>
+                    <h2>🎉 Thank You!</h2>
+                    <p>Your quote request has been received. Our team will review your details and get back to you within 24 hours.</p>
+                    <p style="font-size:0.9rem;color:var(--text-muted);margin-top:4px;">We look forward to serving you!</p>
+                    <button class="btn btn-primary" onclick="closeQuoteModal()"><i class="fas fa-arrow-left"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== APPLICATION MODAL ===== -->
+    <div class="modal-overlay form-modal" id="applyModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeApplyModal()">&times;</button>
+            <div id="applyFormContent">
+                <div class="modal-icon"><i class="fas fa-user-plus"></i></div>
+                <h2>Apply Now</h2>
+                <p style="color:var(--text-muted);margin-bottom:20px;">Join the Mega Joules team. Fill in your details and attach your CV.</p>
+                <form id="applyForm" onsubmit="submitApplication(event)">
+                    <div class="form-group">
+                        <label for="aname">Full Name *</label>
+                        <input type="text" id="aname" required placeholder="Your full name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="aemail">Email Address *</label>
+                        <input type="email" id="aemail" required placeholder="you@example.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="aphone">Phone Number *</label>
+                        <input type="tel" id="aphone" required placeholder="Your phone number" />
+                    </div>
+                    <div class="form-group">
+                        <label for="aposition">Position Applying For</label>
+                        <select id="aposition">
+                            <option value="">Select a position...</option>
+                            <option value="supervisor">Commercial Cleaning Supervisor</option>
+                            <option value="industrial">Industrial Cleaning Specialist</option>
+                            <option value="garden">Garden Maintenance Technician</option>
+                            <option value="general">General Cleaner</option>
+                            <option value="driver">Driver / Operator</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amessage">Tell us about yourself</label>
+                        <textarea id="amessage" placeholder="Briefly describe your experience and why you'd like to join us..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fas fa-paper-plane"></i> Submit Application</button>
+                </form>
+            </div>
+            <div id="applyThankYou" style="display:none;">
+                <div class="thank-you-content">
+                    <div class="big-icon"><i class="fas fa-check-circle"></i></div>
+                    <h2>✅ Application Received!</h2>
+                    <p>Thank you for applying to Mega Joules Cleaning &amp; Property Maintenance.</p>
+                    <p style="font-size:0.95rem;color:var(--text-muted);">Our HR team will review your application and contact you soon if your profile matches our requirements.</p>
+                    <p style="font-size:0.9rem;color:var(--text-muted);margin-top:4px;">We appreciate your interest in joining our team!</p>
+                    <button class="btn btn-primary" onclick="closeApplyModal()"><i class="fas fa-arrow-left"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="section-padding" style="background:var(--gray-soft);" id="why">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title">Built on <span>Excellence</span></h2>
+                <p class="section-sub">We combine professionalism, quality, and reliability to deliver outstanding results every time.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="icon"><i class="fas fa-user-tie"></i></div>
+                    <h4>Professional Team</h4>
+                    <p>Highly trained, vetted, and uniformed staff.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="icon"><i class="fas fa-award"></i></div>
+                    <h4>Quality Service</h4>
+                    <p>Uncompromising standards and attention to detail.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="fas fa-clock"></i></div>
+                    <h4>Reliable &amp; Efficient</h4>
+                    <p>Punctual, consistent, and results-driven.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="icon"><i class="fas fa-smile"></i></div>
+                    <h4>Customer Satisfaction</h4>
+                    <p>Your happiness is our success metric.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="fas fa-check-double"></i></div>
+                    <h4>100% Commitment</h4>
+                    <p>We stand behind every service we provide.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Trusted Partner</h4>
+                    <p>Building long-term relationships with our clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INDUSTRIES ===== -->
+    <section class="section-padding-sm" id="industries">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Industries We Serve</span>
+                <h2 class="section-title">Trusted Across <span>South Africa</span></h2>
+            </div>
+            <div class="industries-grid" data-aos="fade-up" data-aos-delay="100">
+                <span class="industry-tag">Corporate Offices</span>
+                <span class="industry-tag">Shopping Centres</span>
+                <span class="industry-tag">Schools</span>
+                <span class="industry-tag">Universities</span>
+                <span class="industry-tag">Hospitals</span>
+                <span class="industry-tag">Warehouses</span>
+                <span class="industry-tag">Factories</span>
+                <span class="industry-tag">Hotels</span>
+                <span class="industry-tag">Residential Estates</span>
+                <span class="industry-tag">Restaurants</span>
+                <span class="industry-tag">Retail Stores</span>
+                <span class="industry-tag">Construction Sites</span>
+                <span class="industry-tag">Municipal Buildings</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="section-padding" style="background:var(--gray-soft);" id="process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Our Process</span>
+                <h2 class="section-title">How We <span>Work</span></h2>
+            </div>
+            <div class="process-timeline" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-step">
+                    <div class="step-num">1</div>
+                    <h4>Request a Quote</h4>
+                    <p>Tell us your needs</p>
+                </div>
+                <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="step-num">2</div>
+                    <h4>Site Inspection</h4>
+                    <p>We assess the scope</p>
+                </div>
+                <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="step-num">3</div>
+                    <h4>Custom Proposal</h4>
+                    <p>Tailored for you</p>
+                </div>
+                <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="step-num">4</div>
+                    <h4>Professional Service</h4>
+                    <p>Flawless execution</p>
+                </div>
+                <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="step-num">5</div>
+                    <h4>Quality Inspection</h4>
+                    <p>We check every detail</p>
+                </div>
+                <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="step-num">6</div>
+                    <h4>Client Satisfaction</h4>
+                    <p>Your happiness matters</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="section-padding" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Our <span>Work</span></h2>
+                <p class="section-sub">Showcasing the quality and care we bring to every project.</p>
+            </div>
+            <div class="portfolio-filters" data-aos="fade-up">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="commercial">Commercial</button>
+                <button data-filter="residential">Residential</button>
+                <button data-filter="industrial">Industrial</button>
+                <button data-filter="pressure">Pressure Cleaning</button>
+                <button data-filter="garden">Garden</button>
+                <button data-filter="painting">Painting</button>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid" data-aos="fade-up" data-aos-delay="100">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section-padding" style="background:var(--gray-soft);" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Our <span>Clients Say</span></h2>
+            </div>
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="quote">"Mega Joules transformed our office space. Their attention to detail and professionalism is unmatched. Highly recommended!"</div>
+                            <div class="author">
+                                <!-- 👇 REPLACE WITH REAL CLIENT PHOTO -->
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Client" />
+                                <div><div class="name">John M.</div><div class="role">Operations Director, Durban</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="quote">"We've used their services for our retail stores across KZN. Consistent quality, reliable scheduling, and a team that truly cares."</div>
+                            <div class="author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Client" />
+                                <div><div class="name">Sarah K.</div><div class="role">Retail Manager, Pietermaritzburg</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="quote">"From industrial cleaning to garden maintenance, Mega Joules handles it all with expertise and a smile. A true partner."</div>
+                            <div class="author">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Client" />
+                                <div><div class="name">David R.</div><div class="role">Facilities Manager, Johannesburg</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="quote">"The sanitization and disinfection services gave us peace of mind. Professional, thorough, and caring."</div>
+                            <div class="author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Client" />
+                                <div><div class="name">Linda N.</div><div class="role">Healthcare Admin, Cape Town</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination" style="position:relative;margin-top:20px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TRUSTED BY ===== -->
+    <section class="section-padding-sm" id="trusted">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Trusted By</span>
+                <h2 class="section-title" style="font-size:1.6rem;">Leading Companies Across <span>South Africa</span></h2>
+            </div>
+            <div class="trusted-grid" data-aos="fade-up" data-aos-delay="100">
+                <!-- 👇 REPLACE SRC WITH REAL COMPANY LOGOS -->
+                <div class="trusted-item">
+                    <img src="https://ui-avatars.com/api/?name=Bidvest&background=003366&color=fff&size=64&bold=true" alt="Bidvest" />
+                    <div class="brand-name">Bidvest</div>
+                    <div class="brand-tag">Facilities</div>
+                </div>
+                <div class="trusted-item">
+                    <img src="https://ui-avatars.com/api/?name=Servest&background=e30613&color=fff&size=64&bold=true" alt="Servest" />
+                    <div class="brand-name">Servest</div>
+                    <div class="brand-tag">Integrated</div>
+                </div>
+                <div class="trusted-item">
+                    <img src="https://ui-avatars.com/api/?name=Rentokil&background=00a651&color=fff&size=64&bold=true" alt="Rentokil" />
+                    <div class="brand-name">Rentokil</div>
+                    <div class="brand-tag">Pest Control</div>
+                </div>
+                <div class="trusted-item">
+                    <img src="https://ui-avatars.com/api/?name=Jani-King&background=1a1a2e&color=fff&size=64&bold=true" alt="Jani-King" />
+                    <div class="brand-name">Jani-King</div>
+                    <div class="brand-tag">Commercial</div>
+                </div>
+                <div class="trusted-item">
+                    <img src="https://ui-avatars.com/api/?name=Vanguard&background=00529b&color=fff&size=64&bold=true" alt="Vanguard" />
+                    <div class="brand-name">Vanguard</div>
+                    <div class="brand-tag">Cleaning</div>
+                </div>
+                <div class="trusted-item">
+                    <img src="https://ui-avatars.com/api/?name=Stanley&background=c41230&color=fff&size=64&bold=true" alt="Stanley Steemer" />
+                    <div class="brand-name">Stanley Steemer</div>
+                    <div class="brand-tag">Restoration</div>
+                </div>
+                <div class="trusted-item">
+                    <img src="https://ui-avatars.com/api/?name=ServiceMaster&background=00529b&color=fff&size=64&bold=true" alt="ServiceMaster" />
+                    <div class="brand-name">ServiceMaster</div>
+                    <div class="brand-tag">Clean</div>
+                </div>
+                <div class="trusted-item">
+                    <img src="https://ui-avatars.com/api/?name=Sodexo&background=004b87&color=fff&size=64&bold=true" alt="Sodexo" />
+                    <div class="brand-name">Sodexo</div>
+                    <div class="brand-tag">Quality</div>
+                </div>
+                <div class="trusted-item">
+                    <img src="https://ui-avatars.com/api/?name=ISS&background=003399&color=fff&size=64&bold=true" alt="ISS" />
+                    <div class="brand-name">ISS</div>
+                    <div class="brand-tag">Facilities</div>
+                </div>
+                <div class="trusted-item">
+                    <img src="https://ui-avatars.com/api/?name=ABM&background=005a8c&color=fff&size=64&bold=true" alt="ABM" />
+                    <div class="brand-name">ABM</div>
+                    <div class="brand-tag">Industries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HEALTH & SAFETY ===== -->
+    <section class="section-padding" style="background:var(--gray-soft);" id="safety">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Health &amp; Safety</span>
+                <h2 class="section-title">Your Safety <span>Is Our Priority</span></h2>
+                <p class="section-sub">We adhere to the highest health and safety standards to protect our team, your property, and the environment.</p>
+            </div>
+            <div class="health-grid" data-aos="fade-up" data-aos-delay="100">
+                <!-- 👇 REPLACE SRC WITH YOUR OWN HEALTH & SAFETY IMAGES -->
+                <div class="health-item">
+                    <img src="https://images.unsplash.com/photo-1589985270824-9b6bfcf1dba6?w=400&q=80" alt="PPE" class="health-img" loading="lazy" />
+                    <div class="health-body">
+                        <div class="icon"><i class="fas fa-hard-hat"></i></div>
+                        <h5>PPE</h5>
+                        <p>Full protective equipment for all staff</p>
+                    </div>
+                </div>
+                <div class="health-item">
+                    <img src="https://images.unsplash.com/photo-1584483766114-2cea6facdf57?w=400&q=80" alt="Sanitization" class="health-img" loading="lazy" />
+                    <div class="health-body">
+                        <div class="icon"><i class="fas fa-spray-can"></i></div>
+                        <h5>Sanitization</h5>
+                        <p>Hospital-grade disinfectant protocols</p>
+                    </div>
+                </div>
+                <div class="health-item">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80" alt="Compliance" class="health-img" loading="lazy" />
+                    <div class="health-body">
+                        <div class="icon"><i class="fas fa-file-contract"></i></div>
+                        <h5>Compliance</h5>
+                        <p>ISO &amp; health code certified</p>
+                    </div>
+                </div>
+                <div class="health-item">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&q=80" alt="Health Standards" class="health-img" loading="lazy" />
+                    <div class="health-body">
+                        <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                        <h5>Health Standards</h5>
+                        <p>Exceeding industry benchmarks</p>
+                    </div>
+                </div>
+                <div class="health-item">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&q=80" alt="Eco-Friendly" class="health-img" loading="lazy" />
+                    <div class="health-body">
+                        <div class="icon"><i class="fas fa-leaf"></i></div>
+                        <h5>Eco-Friendly Products</h5>
+                        <p>Non-toxic, sustainable solutions</p>
+                    </div>
+                </div>
+                <div class="health-item">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&q=80" alt="Safety Protocols" class="health-img" loading="lazy" />
+                    <div class="health-body">
+                        <div class="icon"><i class="fas fa-shield-virus"></i></div>
+                        <h5>Safety Protocols</h5>
+                        <p>Rigorous safety checklists</p>
+                    </div>
+                </div>
+                <div class="health-item">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80" alt="Equipment" class="health-img" loading="lazy" />
+                    <div class="health-body">
+                        <div class="icon"><i class="fas fa-tools"></i></div>
+                        <h5>Professional Equipment</h5>
+                        <p>State-of-the-art cleaning gear</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section-padding" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-sub">Everything you need to know about our services and process.</p>
+            </div>
+            <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">What areas do you serve? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a">We serve the entire KwaZulu-Natal region, including Durban, Pietermaritzburg, Richards Bay, and surrounding areas. We also undertake projects across South Africa for corporate clients.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Are your cleaning products eco-friendly? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a">Yes, we use environmentally friendly, non-toxic cleaning products that are safe for people, pets, and the planet. Our solutions are certified and meet international standards.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Do you offer customized cleaning schedules? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a">Absolutely. We work with you to create a tailored cleaning schedule that fits your business hours, budget, and specific requirements—whether daily, weekly, or monthly.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Are your staff trained and insured? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a">All our staff undergo rigorous training, background checks, and are fully insured. We maintain the highest standards of professionalism and safety.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">How do I get a quote? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a">You can request a quote via our contact form, call us directly, or send a WhatsApp message. We'll arrange a site inspection and provide a detailed, no-obligation proposal.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOG ===== -->
+    <section class="section-padding" style="background:var(--gray-soft);" id="blog">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Insights</span>
+                <h2 class="section-title">Latest <span>Articles</span></h2>
+                <p class="section-sub">Expert tips, industry news, and insights from our team.</p>
+            </div>
+            <div class="blog-grid" data-aos="fade-up" data-aos-delay="100">
+                <!-- 👇 REPLACE SRC WITH YOUR OWN BLOG IMAGES -->
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80" alt="Cleaning tips" class="blog-img" loading="lazy" />
+                    <div class="blog-body">
+                        <span class="tag">Cleaning Tips</span>
+                        <h4>10 Proven Ways to Maintain a Hygienic Office</h4>
+                        <p class="blog-excerpt">Discover expert strategies to keep your workspace clean, healthy, and productive for your team.</p>
+                        <div class="blog-full" id="blogFull1">
+                            <img src="https://images.unsplash.com/photo-1580548099403-e837a5fc1c31?w=600&q=80" alt="Office cleaning" loading="lazy" />
+                            <p>Maintaining a hygienic office is essential for employee health and productivity. Start with daily desk sanitization, high-touch area cleaning (door handles, light switches, keyboards), and regular floor care. Implement a weekly deep-clean schedule for carpets, upholstery, and windows. Encourage employees to keep personal workspaces tidy and provide hand sanitizing stations throughout the office. Our professional team can design a custom cleaning plan that fits your business needs and keeps your workplace spotless year-round.</p>
+                        </div>
+                        <button class="read-more" onclick="toggleBlog(this, 'blogFull1')">Read More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Industrial cleaning" class="blog-img" loading="lazy" />
+                    <div class="blog-body">
+                        <span class="tag">Industrial</span>
+                        <h4>The Future of Industrial Cleaning: Automation &amp; AI</h4>
+                        <p class="blog-excerpt">How technology is transforming the cleaning industry and what it means for your facility.</p>
+                        <div class="blog-full" id="blogFull2">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Industrial cleaning" loading="lazy" />
+                            <p>From robotic scrubbers that navigate warehouses autonomously to AI-powered scheduling systems that optimize cleaning routes, technology is revolutionizing industrial cleaning. These innovations reduce labor costs, improve consistency, and allow for real-time monitoring of cleaning quality. At Mega Joules, we're at the forefront of adopting these technologies to deliver faster, smarter, and more cost-effective cleaning solutions for our industrial clients.</p>
+                        </div>
+                        <button class="read-more" onclick="toggleBlog(this, 'blogFull2')">Read More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80" alt="Eco-friendly" class="blog-img" loading="lazy" />
+                    <div class="blog-body">
+                        <span class="tag">Sustainability</span>
+                        <h4>Eco-Friendly Cleaning: Why It Matters for Your Business</h4>
+                        <p class="blog-excerpt">Explore the benefits of green cleaning for your brand, employee health, and the environment.</p>
+                        <div class="blog-full" id="blogFull3">
+                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="Eco-friendly cleaning" loading="lazy" />
+                            <p>Switching to eco-friendly cleaning products reduces your carbon footprint, improves indoor air quality, and demonstrates corporate social responsibility. Green cleaning eliminates harsh chemicals, protecting both your employees and the environment. It also enhances your brand reputation among environmentally conscious clients and stakeholders. Our green cleaning solutions are just as effective as traditional methods — and much safer for everyone.</p>
+                        </div>
+                        <button class="read-more" onclick="toggleBlog(this, 'blogFull3')">Read More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CAREERS ===== -->
+    <section class="section-padding" id="careers">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Careers</span>
+                <h2 class="section-title">Join Our <span>Team</span></h2>
+                <p class="section-sub">We're always looking for talented, passionate people to join the Mega Joules family.</p>
+            </div>
+            <div class="careers-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="career-card">
+                    <span class="badge">Full-Time</span>
+                    <h4>Commercial Cleaning Supervisor</h4>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i> Durban, KZN</div>
+                    <p>Lead our commercial cleaning team, ensuring quality standards and client satisfaction.</p>
+                    <button class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="openApplyModal()">Apply Now</button>
+                </div>
+                <div class="career-card">
+                    <span class="badge">Full-Time</span>
+                    <h4>Industrial Cleaning Specialist</h4>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i> Richards Bay, KZN</div>
+                    <p>Experienced in heavy-duty cleaning, chemical handling, and industrial equipment.</p>
+                    <button class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="openApplyModal()">Apply Now</button>
+                </div>
+                <div class="career-card">
+                    <span class="badge">Part-Time</span>
+                    <h4>Garden Maintenance Technician</h4>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i> Pietermaritzburg, KZN</div>
+                    <p>Passionate about landscaping, gardening, and grounds maintenance.</p>
+                    <button class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="openApplyModal()">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section-padding-sm" id="cta">
+        <div class="container">
+            <div class="cta-section" data-aos="zoom-in" data-aos-duration="700">
+                <div class="container" style="max-width:100%;padding:0;">
+                    <div class="cta-content">
+                        <h2>Ready to Transform Your Property?</h2>
+                        <p>Request a free quote today and experience the Mega Joules difference.</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="tel:+27693939220" class="btn btn-white" id="callNowBtn"><i class="fas fa-phone"></i> Call Now</a>
+                        <button class="btn btn-primary" id="ctaGetQuoteBtn"><i class="fas fa-paper-plane"></i> Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-sub">We're here to help. Reach out for a quote or any inquiries.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-info-item" id="contactPhone">
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div class="text"><h4>Phone</h4><p>069 393 9220</p></div>
+                    </div>
+                    <div class="contact-info-item" id="contactWhatsApp">
+                        <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="text"><h4>WhatsApp</h4><p>069 393 9220</p></div>
+                    </div>
+                    <div class="contact-info-item" id="contactEmail">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="text"><h4>Email</h4><p>megajoulescleaning@gmail.com</p></div>
+                    </div>
+                    <div class="contact-info-item" id="contactAddress">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="text"><h4>Address</h4><p>59 Diakonia Avenue, Albert Park, Durban, KwaZulu-Natal, 4000</p></div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon"><i class="fas fa-clock"></i></div>
+                        <div class="text"><h4>Office Hours</h4><p>Mon–Fri: 08:00 – 16:00<br /><span style="font-size:0.8rem;color:var(--text-muted);">24/7 Online &amp; Call Job Requests</span></p></div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" action="https://formspree.io/f/xbjvgvor" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Your company name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="commercial">Commercial Cleaning</option>
+                                <option value="industrial">Industrial Cleaning</option>
+                                <option value="residential">Residential Cleaning</option>
+                                <option value="retail">Retail Cleaning</option>
+                                <option value="healthcare">Healthcare Cleaning</option>
+                                <option value="educational">Educational Cleaning</option>
+                                <option value="sanitization">Sanitization &amp; Disinfection</option>
+                                <option value="pest">Pest Control</option>
+                                <option value="garden">Garden Services</option>
+                                <option value="pressure">High Pressure Cleaning</option>
+                                <option value="pool">Pool Cleaning</option>
+                                <option value="painting">Painting</option>
+                                <option value="tile">Tile Installation &amp; Removal</option>
+                                <option value="cupboards">Built-in Cupboards Installation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" name="location" placeholder="City / Suburb" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your needs..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-wrap" data-aos="fade-up" data-aos-delay="100">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.854252548529!2d31.010759315037724!3d-29.85831308196339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a70c6b3af6b3%3A0x9a8b3c5d4f7e2a1!2s59%20Diakonia%20Ave%2C%20Albert%20Park%2C%20Durban%2C%204000!5e0!3m2!1sen!2sza!4v1650000000000" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo" id="footerLogo">
+                        <!-- 👇 REPLACE WITH YOUR OWN LOGO -->
+                        <img src="https://ui-avatars.com/api/?name=MJ&background=0B7BEA&color=fff&size=44&font-size=0.5&bold=true" alt="Mega Joules Logo" class="logo-img" />
+                        <span>Mega<span>Joules</span></span>
+                    </a>
+                    <p style="margin-top:8px;">Clean Spaces. Better Places. We deliver exceptional cleaning and maintenance solutions with 100% commitment to quality.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Insights</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Commercial Cleaning</a></li>
+                        <li><a href="#services">Industrial Cleaning</a></li>
+                        <li><a href="#services">Residential Cleaning</a></li>
+                        <li><a href="#services">Sanitization</a></li>
+                        <li><a href="#services">Pest Control</a></li>
+                        <li><a href="#services">Painting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Stay Updated</h4>
+                    <p style="font-size:0.9rem;margin-bottom:8px;">Subscribe to our newsletter.</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email address" id="newsletterEmail" />
+                        <button class="btn btn-primary" onclick="subscribeNewsletter()" style="padding:10px;font-size:0.85rem;">Subscribe</button>
+                    </div>
+                    <p style="font-size:0.8rem;margin-top:10px;color:rgba(255,255,255,0.3);">Company Reg: 2025/466476/07</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Mega Joules Cleaning &amp; Property Maintenance. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING BUTTONS ===== -->
+    <a href="https://wa.me/27693939220" target="_blank" class="floating-wa" aria-label="WhatsApp" id="floatingWhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button class="back-top" id="backTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script src="script.js">
+    </script>
+</body>
+</html>
